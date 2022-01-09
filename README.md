@@ -30,7 +30,23 @@ When the statistics are divided out by manufacturing lot, we can see a much diff
 While the variance of all of the suspension coil data has a variance below 100 PSI (coming in just over 62), a breakdown of variance by manufacturing lot shows that nearly all of that variance is coming from lot 3. Lots 1 and 2 are in compliance, but the coils from manufacturing lot 3 fail the design specifications for MechaCar suspension coils - having 170 variance, well over the limit of 100. 
 
 ## T-tests on Suspension Coils
-- Briefly summarize your interpretation and findings for the t-test results. Include screenshots of the t-test to support your summary.
+To see if the detected discrepancy between manufacturing lots is statistically different (that is, due to random chance or indicative of a manufacturing error or other issue), I performed a T-test comparing the individual lots to the overall mean of 1500 PSI. 
+
+![total_t](Images/total_t_test.png)
+
+The first lot has a p-value of 1 and a t-value of 0, showing that the mean for Lot 1 is exactly 1500, or the mean for the overall coil PSI. 
+
+The second lot has p=0.6 and t=0.5, with a mean of 1500.2, so Lot 2 also has a fairly close fit to the average coil from all three lots. 
+
+However, the third lot shows a p-value of 0.04 and a t-value of -2.1, which indicates that there is a significant difference between the coils from Lot 3 and the the other two lots. 
+
+Without dividing out the coils based on the manufacturing lot, we get a much different picture of what is going on, as seen below. 
+
+![lot_t](Images/lot_t_test.png)
+
+This t-test tells us that the mean (1498.78) is not significantly different than the overall mean, with p=0.06, and could just be random variation within our sample. 
+
+Dividing the manufacturing lots and taking separate t-tests is vital to seeing the discrepancy between PSI in suspension coils from each of the three manufacturing lots. 
 
 ## Study Design: MechaCar vs Competition
 - Description of a statistical study that can quantify how the MechaCar performs against the competition.
