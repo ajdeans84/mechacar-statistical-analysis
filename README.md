@@ -14,7 +14,7 @@ Using linear regression on the variables in this file, we can analyze which of t
 
 Vehicle Length and Ground Clearance were the best indicators of vehicle mileage (MPG) for this dataset of 50 MechaCar vehicle prototypes, each producing a p-value of 0.05 or lower, indicating that their relationship on MPG is non-random. Vehicle Weight was related, but with more than a 5% chance the relationship could be produced at random. Spoiler Angle and having AWD were not significantly related to MPG in these vehicles.
 
-* Is the slope of the linear model considered to be zero? Why or why not?
+The slope of the linear model is non-zero. That is, there is a relationship between MPG and the other variables. A slope of zero would indicate that there is no relationship between the vehicle metrics and its mileage. 
 
 This linear model is a fair predictor of MPG for these vehicles. With an R squared value of 0.71, it is assumed that 71% of the mileage data can be explained by our other variables.
 
@@ -49,10 +49,8 @@ This t-test tells us that the mean (1498.78) is not significantly different than
 Dividing the manufacturing lots and taking separate t-tests is vital to seeing the discrepancy between PSI in suspension coils from each of the three manufacturing lots. 
 
 ## Study Design: MechaCar vs Competition
-- Description of a statistical study that can quantify how the MechaCar performs against the competition.
-    [Think critically about what metrics would be of interest to a consumer: for a few examples, cost, city or highway fuel efficiency, horse power, maintenance cost, or safety rating]
-- Address the following questions:
-    * What metric or metrics are you going to test?
-    * What is the null hypothesis or alternative hypothesis?
-    * What statistical test would you use to test the hypothesis? And why?
-    * What data is needed to run the statistical test?
+To test whether or not the MechaCar outperforms competing vehicles, we can compare the cost, fuel efficiency, and safety rating to other vehicles. Using ANOVA would be most applicable for comparing means of more than two groups of data and seeing if there is a significant different in at least one sample (that is, the MechaCar - hopefully). To test this, we would need data regarding competing vehicles and their cost, mileage, and safety ratings - along with determining which vehicles we should analyze. By only comparing similar vehicles (which could be based on size/type like SUV vs sedan vs truck), we can ensure the variations we see are not simply due to variances of these metrics for the vehicle type. 
+
+Null Hypothesis: If the MechaCar is not a better vehicle than other vehicles on the market, then it will not have a significantly higher fuel efficiency or safety rating, nor a significantly different cost, than its competitors. 
+
+Alternate Hypothesis: If the MechaCar is a better vehicle than other vehicles on the market, then it will have a significantly higher fuel efficiency or safety rating, or a significantly different cost, than its competitors. 
