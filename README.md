@@ -14,7 +14,7 @@ Using linear regression on the variables in this file, we can analyze which of t
 
 Vehicle Length and Ground Clearance were the best indicators of vehicle mileage (MPG) for this dataset of 50 MechaCar vehicle prototypes, each producing a p-value of 0.05 or lower, indicating that their relationship on MPG is non-random. Vehicle Weight was related, but with more than a 5% chance the relationship could be produced at random. Spoiler Angle and having AWD were not significantly related to MPG in these vehicles.
 
-The slope of the linear model is non-zero. That is, there is a relationship between MPG and the other variables. A slope of zero would indicate that there is no relationship between the vehicle metrics and its mileage. 
+The slope of the linear model is non-zero. We have a p-value of 5.35e-11, which is less than 0.05 and indicates that there is a relationship between MPG and the other variables. A slope of zero would be when p>0.05, which would indicate that there is no relationship between the vehicle metrics and its mileage. 
 
 This linear model is a fair predictor of MPG for these vehicles. With an R squared value of 0.71, it is assumed that 71% of the mileage data can be explained by our other variables.
 
